@@ -15,9 +15,10 @@ const calcularPromedio = (resultado) => {
         diasMes = 31
     }
 
-    for(let i = 1; i <= (AÑO_FIN - 2010); i += diasMes ){
+    for(let i = 0; i <= ((AÑO_FIN - 2010)* diasMes); i += diasMes ){
         for(let j = 0; j < diasMes; j++){
-            console.log(i+j)
+            console.log(i,'i')
+            console.log(j,'j')
             mejoresDias[j] += resultado[i+j]
         }
     }
